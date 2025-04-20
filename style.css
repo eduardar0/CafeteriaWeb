@@ -64,3 +64,14 @@ section{
     padding-bottom: 0.5rem;
     font-size: 2rem;
 }
+
+.icons img{
+    margin: 1rem; /*espaço entre eles*/
+    cursor: pointer; /*cursor com mãozinha*/
+}
+
+.icons img:hover{
+    width: 40px;
+    height: 40px;
+    
+}
