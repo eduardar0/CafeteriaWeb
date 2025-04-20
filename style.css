@@ -46,8 +46,8 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
 
 }
 
@@ -87,6 +87,11 @@ section{
 
 }
 
+.btn:hover {
+    letter-spacing: 0.1rem;
+
+}
+
 .home-container {
     background: url("./img/home-img.jpg");
     background-size: cover; /*sempre cobre o espaço todo*/
@@ -120,4 +125,81 @@ section{
     line-height: 1.8;
     padding: 1rem 0;
     
+}
+
+.title {
+    font-size: 3.5rem; /* antes: 5rem, que era exagerado pra títulos normais */
+    color: var(--main_color);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+
+
+.title span{
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.sobre .row {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 2rem;
+    padding: 4rem 5%;
+    border-radius: 1rem;
+}
+
+.sobre .row .conteudo {
+    padding: 2rem 1rem;
+    max-width: 600px;
+}
+
+.sobre .row .conteudo h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.sobre .row .conteudo p {
+    font-size: 1.4rem;
+    color: #ccc;
+    line-height: 2;
+}
+
+.sobre .conteiner-image {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre .conteiner-image img {
+    width: 100%;
+    max-width: 400px; /* diminui o tamanho */
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .sobre .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .sobre .row .conteudo h3 {
+        font-size: 2rem;
+    }
+
+    .sobre .row .conteudo p {
+        font-size: 1.2rem;
+    }
 }
