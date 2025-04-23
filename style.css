@@ -203,3 +203,48 @@ section{
         font-size: 1.2rem;
     }
 }
+
+.menu .box-conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-conteiner .box {
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+}
+
+.menu .box-conteiner .box img {
+    height: 10rem;
+}
+
+.menu .box-conteiner .box h3 {
+    color: #fff;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.menu .box-conteiner .box .price {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-conteiner .box .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-conteiner .box:hover {
+    background-color: #fff;
+}
+
+.menu .box-conteiner .box:hover > * {
+    color: var(--black);
+}
+
+
